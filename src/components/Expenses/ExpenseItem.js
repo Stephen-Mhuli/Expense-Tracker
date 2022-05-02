@@ -3,12 +3,12 @@ import './ExpenseItem.css';
 import ExpenseDate from './ExpenseDate';
 
 const ExpenseItem = (props) => {
-    // let title = props.title;
+    
     const [title, setTitle ] = useState(props.title);
+    console.log('ExpenseItem is re-evaluated');
 
     const clickHandler = () => {
         setTitle("Updated");
-        //console.log(title);
     }
    
     return (
